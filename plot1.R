@@ -16,7 +16,7 @@ plot1 <- function(allHouseHold){
     , res = NA
     , bg = "transparent"
   )
-  #Generationg the graphic with the suggested texts and colors
+  #Generating the graphic with the suggested texts and colors
   hist(workingData$Global_active_power, col="red", 
        xlab = "Global Active Power (kilowatts)", 
        main="Global Active Power")

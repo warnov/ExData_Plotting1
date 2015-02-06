@@ -16,7 +16,7 @@ plot3 <- function(allHouseHold){
       , res = NA
       , bg = "transparent"
     )
-  #Generationg the graphic with the suggested texts and colors
+  #Generating the graphic with the suggested texts and colors
   plot(y = wd$Sub_metering_1, 
        x=wd$Date, 
        type = "l", 

@@ -16,7 +16,7 @@ plot2 <- function(allHouseHold){
     , res = NA
     , bg = "transparent"
   )
-  #Generationg the graphic with the suggested texts and colors
+  #Generating the graphic with the suggested texts and colors
   plot(y = wd$Global_active_power, 
        x=wd$Date, 
        type = "l", 
