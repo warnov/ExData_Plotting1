@@ -17,15 +17,17 @@ plot3 <- function(allHouseHold){
       , bg = "transparent"
     )
   #Generating the graphic with the suggested texts and colors
-  plot(y = wd$Sub_metering_1, 
-       x=wd$Date, 
+  plot(y = workingData$Sub_metering_1, 
+       x=workingData$Date, 
        type = "l", 
        xlab = "", 
        ylab="Energy sub metering")
-  lines(y = wd$Sub_metering_2, x=wd$Date, col="red")
-  lines(y = wd$Sub_metering_3, x=wd$Date, col="blue")
+  lines(y = workingData$Sub_metering_2,
+        x=workingData$Date, col="red")
+  lines(y = workingData$Sub_metering_3, 
+        x=workingData$Date, col="blue")
   legend("topright", 
-         pch="_", 
+         lty=1,
          col=c("black", 
                "red", 
                "blue"), 

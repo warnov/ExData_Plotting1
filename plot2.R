@@ -17,8 +17,8 @@ plot2 <- function(allHouseHold){
     , bg = "transparent"
   )
   #Generating the graphic with the suggested texts and colors
-  plot(y = wd$Global_active_power, 
-       x=wd$Date, 
+  plot(y = workingData$Global_active_power, 
+       x=workingData$Date, 
        type = "l", 
        xlab = "", 
        ylab="Global Active Power (kilowatts)")
