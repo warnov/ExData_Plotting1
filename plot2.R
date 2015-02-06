@@ -1,7 +1,7 @@
-#This function is intended to generate the first plot suggested in the
+#This function is intended to generate the second plot suggested in the
 #project instructions. It uses the script prepareData.R in order to get
 #the dataset to be plotted
-plot1 <- function(allHouseHold){
+plot2 <- function(allHouseHold){
   source('prepareData.R')
 
   #Let's get the data ready to work with
@@ -9,7 +9,7 @@ plot1 <- function(allHouseHold){
   
   #Preparing the device with the specified size
   png(
-    filename = 'plot1.png'
+    filename = 'plot2.png'
     , width = 480
     , height = 480
     , units = 'px'
@@ -17,10 +17,12 @@ plot1 <- function(allHouseHold){
     , bg = "transparent"
   )
   #Generationg the graphic with the suggested texts and colors
-  hist(workingData$Global_active_power, col="red", 
-       xlab = "Global Active Power (kilowatts)", 
-       main="Global Active Power")
+  plot(y = wd$Global_active_power, 
+       x=wd$Date, 
+       type = "l", 
+       xlab = "", 
+       ylab="Global Active Power (kilowatts)")
   #Flushing the file and closing the device
   dev.off()
-  print("plot1.png written")  
+  print("plot2.png written")  
 }
