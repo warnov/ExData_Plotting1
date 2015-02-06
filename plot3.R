@@ -1,7 +1,7 @@
 #This function is intended to generate the third plot suggested in the
 #project instructions. It uses the script prepareData.R in order to get
 #the dataset to be plotted
-plot3 <- function(allHouseHold){
+plot3 <- function(){
   source('prepareData.R')
   
   #Let's get the data ready to work with

@@ -1,7 +1,7 @@
 #This function is intended to generate the first plot suggested in the
 #project instructions. It uses the script prepareData.R in order to get
 #the dataset to be plotted
-plot1 <- function(allHouseHold){
+plot1 <- function(){
   source('prepareData.R')
 
   #Let's get the data ready to work with
