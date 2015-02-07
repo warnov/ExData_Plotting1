@@ -2,9 +2,13 @@
 #project instructions. It uses the script prepareData.R in order to get
 #the dataset to be plotted
 plot1 <- function(){
+  #This script contains the function prepareData()
+  #The source of the script is included in the repository
+  #and is well documented. Its main function, is to download
+  #read and filter the data to work with
   source('prepareData.R')
 
-  #Let's get the data ready to work with
+  #Let's get the data ready to work with  
   workingData <- prepareData()
   
   #Preparing the device with the specified size

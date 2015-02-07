@@ -6,6 +6,7 @@
 #If the "file" parameter is omitted, then, the .zip file is downloaded again 
 #and stored in a temporary file, for its reading. After being read into memory,
 #the temporary file is deleted.
+#The returned data set will be used to make all the project's graphics
 prepareData <- function(file=""){
   
   #If no txt file is specified, we need to download the zip again
